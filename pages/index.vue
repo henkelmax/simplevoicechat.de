@@ -6,3 +6,9 @@
   </div>
   </body>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: "Simple Voice Chat"
+});
+</script>
