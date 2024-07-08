@@ -7,7 +7,7 @@
     <p class="text-xl mb-8 animate-fade-in-up animation-delay-1">
       Enhance your in-game experience with immersive voice communication.</p>
     <div class="flex justify-center space-x-4 animate-fade-in-up animation-delay-2">
-      <a href="https://modrinth.com/plugin/simple-voice-chat/versions" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 rounded-md transition-all duration-300">
+      <a href="https://modrinth.com/mod/simple-voice-chat/versions" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 rounded-md transition-all duration-300">
         Download
       </a>
       <a href="https://modrepo.de/minecraft/voicechat/wiki/installation" class="px-6 py-3 bg-gray-700 hover:bg-gray-500 rounded-md transition-all duration-300">
