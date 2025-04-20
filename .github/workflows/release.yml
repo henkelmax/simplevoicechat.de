@@ -7,21 +7,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.7.0
+        uses: actions/checkout@v4.2.2
       - name: Set up Node.js
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@v4.4.0
         with:
-          node-version: '20'
+          node-version: 20
       - name: Build website
         run: |
           npm install
           npm run generate
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: dist
           clean: true
-          clean-exclude: "CNAME"
+          clean-exclude: |
+            "CNAME"
+            ".nojekyll"
           single-commit: true
